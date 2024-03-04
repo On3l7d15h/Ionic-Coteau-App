@@ -1,0 +1,7 @@
+{
+  "name": "coteau-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
