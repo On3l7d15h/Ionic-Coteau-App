@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'coteau-app',
   webDir: 'dist',
   server: {
-    androidScheme: 'https'
+    androidScheme: 'http'
   }
 };
 

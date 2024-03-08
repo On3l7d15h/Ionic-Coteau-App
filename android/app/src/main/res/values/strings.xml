@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">coteau-app</string>
+    <string name="title_activity_main">coteau-app</string>
+    <string name="package_name">coteau.app</string>
+    <string name="custom_url_scheme">coteau.app</string>
+</resources>

@@ -1,3 +1,10 @@
+import AboutMeView from '../views/AboutMeView';
+import AgeView from '../views/AgeView';
+import GenderView from '../views/GenderView';
+import MainView from '../views/MainView';
+import NewsView from '../views/NewsView';
+import UView from '../views/UView';
+import WeatherView from '../views/WeatherView';
 import './ExploreContainer.css';
 
 interface ContainerProps {
@@ -5,12 +12,43 @@ interface ContainerProps {
 }
 
 const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
-  return (
-    <div id="container">
-      <strong>{name}</strong>
-      <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-    </div>
-  );
+  switch(name)
+  {
+    case "Principal":
+      return (
+        <MainView />
+      );
+
+    case "Sexo":
+      return (
+        <GenderView />
+      );
+
+    case "Edad":
+      return (
+        <AgeView />
+      );
+
+    case "Universidades":
+      return (
+        <UView />
+      );
+
+    case "Clima":
+      return (
+        <WeatherView />
+      );
+
+    case "Noticias":
+      return (
+        <NewsView />
+      );
+
+    case "Acerca":
+      return (
+        <AboutMeView />
+      );
+  }
 };
 
 export default ExploreContainer;
